@@ -1,0 +1,119 @@
+@media (max-width: 992px){
+    .team-row{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 900px){
+    
+    .team-items{
+        width: calc(50% - 30px);
+        margin-top: 30px;
+    }
+    .profolio-items{
+        flex-basis: 100%;
+    }
+    .aboutus-row .about-items{
+        flex-basis: 100%;
+    }
+    .contact-form form .input-box{
+        flex-wrap: wrap;
+    }
+    .contact-form form .input-box input{
+        width: 100%;
+    }
+    .services-row{
+        flex-wrap: wrap;
+    }
+    .services-items{
+        margin-top: 30px;
+    }
+    .nav-manu ul li a{
+        font: 14px;
+    }
+    .footer-social-manu a{
+        font-size: 16px;
+    }
+    .hero-section .title h2{
+        font-size: 30px;
+    }
+    .hero-btn{
+        padding: 15px 25px;
+    }
+    .aboutus-row .about-items{
+        margin-top: 50px;
+    }
+    .contact-form form button{
+        padding: 15px 30px;
+    }
+    .protfolio-btn a{
+        padding: 15px 30px;
+    }
+    .profolio-items{
+        margin-top: 40px;
+    }
+    .nav-section{ 
+        padding: 25px 0;
+    }
+    .contact-section{
+        padding: 60px 0;
+    }
+
+    .about-section{
+        padding: 60px 0;
+    }
+    .profolio-section{
+        padding: 60px 0;
+    }
+
+    .team-section{
+        padding: 60px 0;
+    }
+    .service-section{
+        padding: 60px 0;
+    }
+    .hero-section{
+        padding: 80px 0;
+    }
+}
+@media (max-width: 768px){
+    .nav-manu ul li a{
+        display: none;
+    }
+    .mobail-manu{
+        display: block;
+    }
+    .services-items{
+        max-width: 50%;
+    }
+    .footer-social-manu a{
+        margin-right: 15px;
+    }
+}
+@media (max-width: 576px){
+    .team-items{
+        width: 100%;
+    }
+    .profolio-items img{
+        width: 450px;
+    }
+    .footer-social-manu a{
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 513px){
+    .footer-social-manu a{
+        margin-bottom: 10px;
+    }
+    .footer-section{
+        padding: 20px 0;
+    }
+    .filter-btn{
+        margin-top: 30px;
+    }
+    .filter-btn button{
+        padding: 10px 18px;
+    }
+}

@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --hedar-section-bg: #87509c;
+    --heding-color: #3c4761;
+    --white-color: #fff;
+    --contact-section-bg: #3c5499;
+    --about-section-bg: #d74680;
+    --protfolio-section-bg: #ffdd99;
+    --footer-section-bg: #344b8e;
+    --team-section-bg: #e7f1f8;
+    --services-section-bg: #17c2a4;
+    --hover-bg: #643a79;
+    --hover-color: #eb7d4b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+    outline: none;
+    
+}
+button{
+    border: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+p{
+    margin: 0;
+}
+ul,ol li{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2;
+    color: var(--heding-color);
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 42px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 18px;
+}
+
+/* Hedar-section */
+.nav-section{
+    background-color: var(--hedar-section-bg);
+    padding: 50px 0;
+}
+.hedar-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-manu ul li{
+    display: inline-block;
+}
+.nav-manu ul li a{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white-color);
+    padding: 10px 15px;
+    transition: all .4s;
+    text-transform: uppercase;
+    margin-right: 10px;
+    
+}
+.nav-section .container{
+    position: relative;
+}
+.nav-manu ul li a:hover{
+    color: var(--hover-color);
+    background: #643a79;
+    border-radius: 5px;
+}
+.mobail-manu button i{
+    font-size: 30px;
+    color: var(--white-color);
+}
+.mobail-manu{
+    display: none;
+}
+.mobail-manu button{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 20%;
+}
+
+
+
+/* Hero start */
+
+.hero-section{
+    background-color: var(--hedar-section-bg);
+    padding: 140px 0;
+}
+.hero-section .title{
+    text-align: center;
+}
+.hero-section .title h2{
+    color: var(--white-color);
+    margin-bottom: 65px;
+    font-size: 36px;
+    font-weight: 500;
+}
+.hero-btn{
+    background-color:var(--hover-color);
+    padding: 25px 40px;
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: all .4s;
+}
+.hero-btn:hover{
+    background-color:#d57144;
+}
+
+/************* Service section start *********/
+.service-section{
+    padding: 120px 0;
+    background-color:var(--services-section-bg);
+}
+.section-title{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.section-title h3{
+    color: var(--white-color);
+    font-weight: 400;
+    margin-bottom: 40px;
+    position: relative;
+}
+.section-title h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    height: 4px;
+    width: 100px;
+    background: #14a58c;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+.section-title p{
+    color: var(--white-color);
+    margin: 0;
+}
+.services-row{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.services-items .service-img{
+    text-align: center;
+}
+.services-items{
+    max-width: 25%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.services-items .service-img img{
+    height: 100px;
+}
+.services-items h5{
+    margin-top: 40px;
+    color: var(--white-color);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.services-items p{
+    max-width: 200px;
+    margin: 0 auto;
+}
+/************* Service section end *********/
+
+/************* team section start *********/
+.team-section{
+    padding: 120px 0;
+    background-color: var(--team-section-bg);
+}
+.team-section .section-title h3{
+    color: var(--heding-color)!important;
+}
+.team-section .section-title p{
+    color: var(--heding-color);
+}
+.team-section .section-title h3::after{
+    background-color: #c8d9e5;
+}
+.team-row{ 
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+    justify-content: center;
+}
+.team-items{
+    width: 25%;
+    text-align: center;
+   
+}
+.team-items .team-single{
+    text-align: center;
+}
+.team-items .team-single img{
+    height: 170px;
+    border-radius: 50%;
+}
+
+.team-items h5{
+    text-transform: uppercase;
+    color: #3c4761;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.team-items span {
+    color: #79d0ee;
+    display: inline-block;
+    margin-bottom: 27px;
+    font-size: 18px;
+}
+.team-items p{
+    max-width: 205px;
+    margin: 0 auto;
+}
+.social-manu{
+    margin-top: 37px;
+}
+.social-manu a {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #bdd1df;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 12px;
+    transition: all .4s;
+}
+.social-manu a i{
+    color: var(--white-color);
+    line-height: 38px;
+}
+.social-manu a:hover{
+    background-color: #b3c4d0;
+}
+/************* team section end *********/
+/************* Protfolio section start *********/
+.profolio-section{
+    background-color: var(--protfolio-section-bg);
+    padding: 120px 0;
+}
+.profolio-section .section-title h3{
+    color: var(--heding-color)!important;
+}
+.profolio-section .section-title p{
+    color: var(--heding-color);
+}
+.profolio-section .section-title h3::after{
+    background-color: #e5c37f;
+}
+.filter-btn{
+    margin-top: 45px;
+    text-align: center;
+}
+.filter-btn button{
+    background-color: #ebc985;
+    display: inline-flex;
+    padding: 15px 20px;
+    margin-right: 10px;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .4s;
+    text-transform: uppercase;
+}
+.filter-btn button:hover{
+    background-color: var(--white-color);
+}
+.row-profolio{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.profolio-items{
+   flex-basis: calc(50% - 15px);
+    margin-top: 65px;
+    text-align: center;
+}
+.profolio-items h5{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.protfolio-btn{
+    margin-top: 65px;
+    text-align: center;
+}
+.protfolio-btn a{
+    color: var(--heding-color);
+    background-color: #17c2a4;
+    padding: 24px 36px;
+    border-radius: 10px;
+    transition: all .4s;
+    font-weight: 500;
+    font-size: 18px;
+}
+.protfolio-btn a:hover{
+    color: var(--white-color);
+    background-color: #15a087;
+}
+/************* Protfolio section end *********/
+/************* About section start *********/
+
+.about-section{
+    background-color: var(--about-section-bg);
+    padding: 120px 0;
+}
+.about-section .section-title h3::after{
+    background-color: #b73c6d;
+}
+
+.aboutus-row{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.aboutus-row .about-items{
+    flex-basis: calc(50% - 15px);
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+    margin-top: 120px;
+}
+.about-items .abt-img{
+    align-self: flex-start;
+    
+}
+.about-items .abt-img img{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.40);
+   
+}
+.about-items .abt-content{}
+.about-items .abt-content p {
+    margin-top: 15px;
+    max-width: 320px;
+    color: var(--white-color);
+    font-size: 17px;
+}
+.about-items .abt-content span{
+    color: #facd96;
+}
+.about-items .abt-content h6{
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 25px 0 10px;
+}
+/************* About section end *********/
+
+
+/************* Contact section start *********/
+.contact-section{
+    background: var(--contact-section-bg);
+    padding: 120px 0;
+}
+.contact-section .section-title h3::after{
+    background-color: #273a71;
+}
+.contact-section .section-title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form{
+    margin-top: 50px;
+    text-align: center;
+}
+.contact-form form{
+    width: 100%;
+}
+.contact-form form .input-box{
+    display: flex;
+    gap: 30px;
+}
+.contact-form form .input-box input::placeholder, .contact-form form textarea::placeholder{
+    color: var(--white-color);
+}
+.contact-form form .input-box input{
+    width: 50%;
+    padding: 25px 30px;
+    border-radius: 3px;
+    border: 0;
+    color: var(--white-color);
+    background: #273a71;
+}
+.contact-form form textarea{
+    width: 100%;
+    padding: 15px 20px;
+    border: 0;
+    background: #273a71;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: var(--white-color);
+}
+.contact-form form button{
+    text-align: center;
+    border: 0;
+    padding: 25px 40px;
+    background: #30bae7;
+    border-bottom: 4px solid #299ec5;
+    border-radius: 5px;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .4s;
+
+}
+.contact-form form button:hover{
+    background: #299dc4;
+    border-bottom: 4px solid #238aac;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/************* Contact section End *********/
+
+
+/************* Footer section start *********/
+.footer-section{
+    background: var(--footer-section-bg);
+    padding: 40px 0;
+}
+
+.footer-social-manu{
+    text-align: center;
+    
+}
+.footer-social-manu a:last-child{
+    margin: 0;
+}
+.footer-social-manu a{
+    font-size: 20px;
+    color: var(--white-color);
+    transition: all .4s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+   margin-right: 40px;
+}
+.footer-social-manu a:hover{
+    color: #30bae7;
+}
+/************* Footer section End *********/
